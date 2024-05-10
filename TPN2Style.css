@@ -1,0 +1,53 @@
+@media (width >= 400px) {
+    body {
+        background-color: rgb(40, 60, 80);
+    }
+}
+@media (width <= 800px) {
+    h1 {
+        text-align: center;
+    }
+}
+@media (width > height) {
+    article {
+        max-width: 50px;
+    }
+} 
+@media (height >= 200) {
+    h1 {
+        background-color: #090;
+    }
+}
+@media print{
+    p {
+        font-family: serif;
+    }
+}
+@media (prefers-color-scheme: light){
+    body, h1{
+        text-decoration: #111;
+        background-color: #ddd;
+    }
+}
+@media screen and (hover: none){
+    a {
+        padding: 2px 5px;
+        background-color: #212;
+    }
+}
+@media screen and (800px > width < 900px){
+    img {
+       display: none; 
+    }
+}
+@media screen and (200px >= width <= 400px){
+    img {
+        object-fit: cover;
+        height: 400px;
+    }
+}
+@media (resolution > 2dppx) {
+    article {
+        background-color: #667;
+    }
+}
