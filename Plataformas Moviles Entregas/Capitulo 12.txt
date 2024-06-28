@@ -1,0 +1,60 @@
+Introducción:
+El Capítulo 12 de este documento se centra en la iluminación y el color en los lugares de trabajo, dos aspectos fundamentales para garantizar condiciones seguras y saludables. Proporciona pautas y requisitos específicos para asegurar que la iluminación en los entornos laborales sea adecuada para las tareas a realizar, mientras que el uso adecuado del color contribuye a prevenir accidentes y facilita la orientación y la identificación de riesgos.
+
+Art. 71.- Este artículo establece los requisitos para la iluminación en los lugares de trabajo, como la composición espectral adecuada de la luz, la prevención del efecto estroboscópico, la iluminancia apropiada, la eliminación del deslumbramiento y la uniformidad de la iluminación.
+
+Art. 72.- Se permite el uso de fuentes luminosas monocromáticas o de espectro limitado en casos donde no se requiera el discernimiento preciso de los colores, sino solo una visión adecuada de los volúmenes.
+
+Art. 73.- las iluminancias requeridas se especifican en el Anexo IV del documento. Se proporcionan tablas que detallan la intensidad mínima de iluminación para diversas clases de tareas visuales y para diferentes tipos de edificios, locales y tareas específicas. Estas iluminancias mínimas están medidas en lux y varían según el tipo de actividad visual y el entorno.
+
+Art. 74.- en el Anexo IV del documento se detallan las relaciones de iluminancias. Se establecen relaciones máximas entre las iluminancias en diferentes partes del campo visual para evitar incomodidad visual o deslumbramiento. Estas relaciones se especifican para el campo visual central, el campo visual periférico, entre la fuente de luz y el fondo sobre el cual se destaca, y entre dos puntos cualesquiera del campo visual. Estas relaciones ayudan a garantizar una distribución uniforme y cómoda de la iluminación en un entorno determinado.
+
+Art. 75.- la uniformidad de la iluminación necesaria también está establecida en el Anexo IV del documento. Se exige una relación no menor de 0,5 entre los valores mínimos y medios de iluminancia para asegurar una uniformidad razonable en un local. Esto significa que la iluminancia mínima debe ser al menos la mitad de la iluminancia media en todo el local, garantizando así una distribución uniforme de la luz.
+
+Art. 76.- Este artículo hace referencia al uso de sistemas de iluminación de emergencia en establecimientos donde se realicen tareas nocturnas o donde no llegue la luz natural durante el día. Estos sistemas deben proporcionar una iluminación mínima para facilitar la evacuación del personal en caso de emergencia.
+
+Art. 77.- Se indica el uso de colores de seguridad para identificar personas, lugares y objetos, con el fin de prevenir accidentes.
+
+Art. 78.- El Anexo IV especifica los valores a utilizar para la identificación de lugares y objetos según las normas IRAM Nº 10.005, 2.507 e IRAM DEF D 10-54. Según esta última norma, se establecen los siguientes colores para la identificación:
+
+- Amarillo: 05 - 1 - 020
+- Naranja: 02 - 1 - 040
+- Verde: 01 - 1 - 120
+- Rojo: 03 - 1 - 080
+- Azul: 08 - 1 - 070
+- Blanco, Negro, Gris: 09 - 1 - 060
+- Violeta: 10 - 1 - 020
+
+Estos colores están destinados a ser utilizados para la identificación de lugares y objetos según las normativas establecidas.
+
+Art. 79.- el Anexo IV establece la necesidad de marcar de manera visible los pasillos y áreas de tránsito, así como las zonas de peligro en los lugares de cruce, utilizando los colores definidos en las normativas IRAM mencionadas. Estos colores proporcionan una forma estandarizada de identificar y señalizar diferentes áreas y peligros en un entorno determinado, lo que contribuye a la seguridad y la prevención de accidentes.
+
+Art. 80.- Se requiere marcar los caminos de evacuación y todas las salidas normales o de emergencia con líneas amarillas y flechas bien visibles en las paredes o pisos.
+
+Art. 81.- Este artículo establece que las partes de máquinas y elementos de la instalación industrial, cuyos colores no estén definidos, pueden pintarse de cualquier color contrastante con los colores de seguridad.
+
+Art. 82.- Las cañerías deben pintarse de acuerdo con las especificaciones del anexo IV.
+
+Art. 83.- Se exige mantener en buenas condiciones de visibilidad todas las señalizaciones, limpiándolas o repintándolas periódicamente.
+
+Art. 84.- Los carteles e indicadores deben ser pintados en colores intensos y contrastantes con la superficie que los contenga para evitar confusiones.
+
+Anexo IV: Este anexo del documento establece las especificaciones detalladas para iluminancias, relaciones de iluminancias, uniformidad de la iluminación y colores específicos a utilizar para fines de seguridad.
+
+Aplicación en una oficina:
+El Capítulo 12 resulta relevante incluso en entornos de oficina con computadoras. Una iluminación adecuada en la oficina ayuda a reducir la fatiga visual y a mantener niveles de productividad óptimos. Además, el uso de colores de seguridad para identificar equipos, áreas de circulación y salidas de emergencia puede ser crucial en situaciones de evacuación o en la prevención de accidentes. Asimismo, las especificaciones para iluminancias y uniformidad de la iluminación pueden aplicarse para garantizar un entorno de trabajo cómodo y ergonómico para los empleados que pasan largas horas frente a las pantallas de computadora.
+
+Conclusion:
+En resumen, el Capítulo 12 establece directrices importantes para la iluminación y el uso del color en los lugares de trabajo, con el objetivo de crear entornos seguros y saludables para los trabajadores. Cumplir con estas normativas no solo garantiza condiciones de trabajo óptimas, sino que también contribuye a prevenir accidentes y mejorar la eficiencia en las tareas laborales.
+
+
+Iluminación:
+1. Establece la intensidad mínima de iluminación para diferentes tipos de tareas visuales y para diferentes áreas dentro de un edificio o local.
+2. Se proporcionan tablas con valores específicos de iluminación para diferentes tipos de tareas visuales y diferentes áreas de un edificio o local.
+3. Se especifica una relación máxima entre la iluminación en diferentes partes del campo visual para evitar incomodidad visual o deslumbramiento.
+4. Se menciona la importancia de mantener una uniformidad razonable en la iluminancia de un lugar.
+5. Se establecen valores mínimos de iluminación general en función de la iluminación localizada.
+
+Color:
+1. Se refiere a las normas específicas para la identificación de lugares y objetos mediante colores.
+2. Se enumeran los códigos de colores según las normas especificadas.
