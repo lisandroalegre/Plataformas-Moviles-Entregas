@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcador de Partido</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .scoreboard {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .team {
+            margin-bottom: 20px;
+        }
+
+        .score {
+            font-size: 2em;
+            margin: 10px 0;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:disabled {
+            background-color: grey;
+            cursor: not-allowed;
+        }
+
+        .controls button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="scoreboard">
+        <div class="team" id="home">
+            <h2>Equipo Local</h2>
+            <div class="score" id="home-score">0</div>
+            <button onclick="incrementScore('home')">+</button>
+            <button onclick="decrementScore('home')">-</button>
+        </div>
+        <div class="team" id="away">
+            <h2>Equipo Visitante</h2>
+            <div class="score" id="away-score">0</div>
+            <button onclick="incrementScore('away')">+</button>
+            <button onclick="decrementScore('away')">-</button>
+        </div>
+        <div class="controls">
+            <button onclick="swapScores()">Intercambiar Puntajes</button>
+            <button onclick="endGame()">Finalizar Partido</button>
+            <button onclick="resetBoard()">Reiniciar Tablero</button>
+        </div>
+    </div>
+    <script>
+        let homeScore = 0;
+        let awayScore = 0;
+        let gameEnded = false;
+
+        function updateScores() {
+            document.getElementById('home-score').textContent = homeScore;
+            document.getElementById('away-score').textContent = awayScore;
+        }
+
+        function incrementScore(team) {
+            if (gameEnded) return;
+
+            if (team === 'home') {
+                homeScore++;
+            } else if (team === 'away') {
+                awayScore++;
+            }
+            updateScores();
+        }
+
+        function decrementScore(team) {
+            if (gameEnded) return;
+
+            if (team === 'home' && homeScore > 0) {
+                homeScore--;
+            } else if (team === 'away' && awayScore > 0) {
+                awayScore--;
+            }
+            updateScores();
+        }
+
+        function swapScores() {
+            if (gameEnded) return;
+
+            let temp = homeScore;
+            homeScore = awayScore;
+            awayScore = temp;
+            updateScores();
+        }
+
+        function endGame() {
+            gameEnded = true;
+            document.querySelectorAll('button').forEach(button => button.disabled = true);
+            document.querySelector('.controls').querySelectorAll('button').forEach(button => button.disabled = false);
+        }
+
+        function resetBoard() {
+            homeScore = 0;
+            awayScore = 0;
+            gameEnded = false;
+            updateScores();
+            document.querySelectorAll('button').forEach(button => button.disabled = false);
+        }
+    </script>
+</body>
+</html>
