@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lista de Contactos - DOM y JavaScript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container my-1 my-sm-2 my-md-4 my-lg-5">
+        <h1>Lista de Contactos</h1>
+        <div class="card">
+            <div class="card-body">
+                <h2>Contactos</h2>
+
+                <div class="mb-3 form-check">
+                    <input class="form-check-input" type="checkbox" id="mostrar-favoritos">
+                    <label class="form-check-label" for="mostrar-favoritos">
+                        Mostrar solo favoritos
+                    </label>
+                </div>
+
+                <ul id="lista-contactos" class="list-group"></ul>
+
+                <hr class="hr">
+
+                <h2>Nuevo Contacto</h2>
+                <form id="form-contacto">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" name="nombre" id="input-nombre" placeholder="Nombre" aria-label="Nombre">
+                        <input type="text" class="form-control" name="apellido" id="input-apellido" placeholder="Apellido" aria-label="Apellido">
+                        <input type="text" class="form-control" name="telefono" id="input-telefono" placeholder="Teléfono" aria-label="Teléfono">
+                        <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="checkbox" id="input-favorito">
+                            <label class="form-check-label" for="input-favorito">
+                                Favorito
+                            </label>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Agregar Contacto</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        let contactos = [
+            {
+                nombre: 'Juan',
+                apellido: 'Perez',
+                telefono: '123456789',
+                favorito: false
+            },
+        ];
+
+        function agregarContacto(nombre, apellido, telefono, favorito) {
+            contactos.push({
+                nombre: nombre,
+                apellido: apellido,
+                telefono: telefono,
+                favorito: favorito
+            });
+            mostrarListado();
+        }
+
+        function mostrarListado() {
+            const listaContactos = document.getElementById('lista-contactos');
+            listaContactos.innerHTML = '';
+
+            // Sort contacts alphabetically by last name
+            contactos.sort((a, b) => (a.apellido > b.apellido) ? 1 : ((b.apellido > a.apellido) ? -1 : 0));
+
+            contactos.forEach(contacto => {
+                // Check if showing only favorites is enabled
+                const mostrarFavoritos = document.getElementById('mostrar-favoritos').checked;
+                if (mostrarFavoritos && !contacto.favorito) {
+                    return;
+                }
+
+                const li = document.createElement('li');
+                li.className = 'list-group-item';
+                li.innerHTML = `
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>${contacto.nombre} ${contacto.apellido} - ${contacto.telefono}</div>
+                        <div>
+                            <input type="checkbox" class="form-check-input" ${contacto.favorito ? 'checked' : ''} disabled>
+                            <label class="form-check-label">Favorito</label>
+                        </div>
+                    </div>
+                `;
+                listaContactos.appendChild(li);
+            });
+        }
+
+        function handlerFormulario(e) {
+            e.preventDefault();
+            const inputNombre = document.getElementById('input-nombre');
+            const inputApellido = document.getElementById('input-apellido');
+            const inputTelefono = document.getElementById('input-telefono');
+            const inputFavorito = document.getElementById('input-favorito');
+
+            const nombre = inputNombre.value.trim();
+            const apellido = inputApellido.value.trim();
+            const telefono = inputTelefono.value.trim();
+            const favorito = inputFavorito.checked;
+
+            if (nombre && apellido && telefono) {
+                agregarContacto(nombre, apellido, telefono, favorito);
+                inputNombre.value = '';
+                inputApellido.value = '';
+                inputTelefono.value = '';
+                inputFavorito.checked = false;
+            }
+        }
+
+        document.getElementById('form-contacto').addEventListener('submit', handlerFormulario);
+        document.getElementById('mostrar-favoritos').addEventListener('change', mostrarListado);
+
+        // Initial display of existing contacts
+        mostrarListado();
+    </script>
+</body>
+</html>
